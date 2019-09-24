@@ -65,7 +65,7 @@ if ( ! current_user_can( $post_type_object->cap->edit_posts ) || ! current_user_
 
 $post    = get_default_post_to_edit( $post_type, true );
 $post_ID = $post->ID;
-
+$post_email = $post->email;
 /** This filter is documented in wp-admin/post.php */
 if ( apply_filters( 'replace_editor', false, $post ) !== true ) {
 	if ( use_block_editor_for_post( $post ) ) {
