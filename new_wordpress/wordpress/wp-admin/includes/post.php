@@ -18,7 +18,6 @@
  * @return object|bool WP_Error on failure, true on success.
  */
 function _wp_translate_postdata( $update = false, $post_data = null ) {
-
 	if ( empty( $post_data ) ) {
 		$post_data = &$_POST;
 	}
